@@ -5,15 +5,17 @@ body {
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #E7EDFD ;
 }
 .container{
   display: flex;
   flex-direction: row;
 }
-.menu-navegacao{
-  background-color: rgb(41, 41, 41);
+/* Estilização do menu de navegação */
+.menu-navegacao{  
+  background-color: rgb(60, 106, 240);
   color: whitesmoke;
   width: 20%;
   height: 100%;
@@ -30,7 +32,6 @@ body {
 .lista-menu-navegacao{
   width: 80%;
   padding: .5rem;
- /*  border: 1px solid black; */
   margin: auto;
 }
 .item-menu-navegacao{
@@ -39,7 +40,7 @@ body {
   padding-left: .5rem;
   width: auto;
   font-size: 1.4;
-  border-bottom: solid .1rem rgb(60, 106, 240);
+  border-bottom: solid .1rem rgb(84, 124, 243);
   height: auto;
   & > i{
     padding-right: .5rem;
@@ -50,10 +51,10 @@ body {
 }
 
 .item-menu-navegacao:hover{
-  background-color: rgb(29, 29, 29);
+  background-color: #1249ED;
   transition: .5s;
   & > a:hover{
-    color:  #a1a1a1;
+    color:  #92ABF7;
     transition: .2s;
   }
 }
@@ -61,3 +62,57 @@ li a{
   text-decoration: none;
 }
 
+/* Estilização do conteudo */
+
+.conteudo{
+  width: 90%;
+  margin-left: 22%;
+  color: rgb(60, 106, 240);
+  font-size: 1.2rem;
+
+}
+.titulo-pagina{
+  border-bottom: solid rgb(60, 106, 240) .2rem;
+
+}
+
+i{
+  padding-right: .5rem;
+}
+div section h3{ 
+  font-family: "Mozilla Headline", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  }
+  section{
+    border-bottom: .2rem solid rgb(60, 106, 240);
+    & > p,ul,ol,.item-formacao{
+      width: 70%;
+      list-style: none;
+      padding-left: 2rem;
+    }
+  }
+.item-formacao{
+  & > p{
+    margin-left: 1rem;
+  }
+}
+  .lista-habilidades{
+    columns: 2;
+    list-style-position: inside;
+    & > li{
+      list-style: circle;
+      margin: 1rem;
+      width: auto;
+    }
+  }
+.link-texto{
+  text-decoration: underline;
+  color: #1249ED;
+  font-weight: bold;
+}
